@@ -1,0 +1,54 @@
+#########################################################################################
+# FBA lib description                                                                   #
+#	      										                                        #
+#											                                            #
+#											                                            #
+# usage: ./fba [option] <path to parameters file>					     				#	
+#											     										#	
+# -r reactions input file								     							#
+# 											     										#	
+# -b boundary input file	      						  	     						#		
+#  											     										#
+# -f user optimization flag - default 0						     						#	
+#											     										#
+# -e epsilon (print step) - default 100		            			     				#
+#											     										#
+# -n number of processes - states, default 4						     				#	
+#											     										#
+# -i number of iteration - default 1000						     						#
+#											     										#
+# -l local state threshold - default 0.01						     					#
+#											     										#
+# -g global states threshold - default 0.1						     					#
+#											     										#
+# Temperature: for state switching: higher means less mixing lower means more mixing    #																						                                   #
+# -t temperature - default 0.01                                                         #
+#											     										#
+# -s reactions considered for randomization only - input file			     			#
+# note: should turn on option q															#
+#										             									#
+# -q on/off flag for option s - default 0						     					#
+#########################################################################################
+
+
+-r /Users/andi/Documents/Projects/FBA/Source/Palsson_reactions_epa_rr_biomass.txt
+
+-b /Users/andi/Documents/Projects/FBA/Source/Palsson_bounds_RDA_inputs_colorectal_cancer.txt
+
+-f 0
+
+-e 100
+
+-n 4
+
+-l 0.01
+
+-g 0.1
+
+-i 1000
+
+-t 0.01
+
+-s /Users/andi/Documents/Projects/FBA/Source/SubsetReactions.txt
+
+-q 1
